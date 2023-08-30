@@ -11,14 +11,22 @@ Bilibili Evolved v1.12.22 功能修复
 </br></br>
 脚本有问题请在我这儿提issue，请不要去原作者那里提issue，如果喜欢此脚本请支持原作者，谢谢！
 
-# 安装
-[点我](https://github.com/PMisRIGHT/Bilibili-Evolved/releases/download/v1.12.22-fix/Bilibili.Evolved.Offline.Mod.user.js)
+# 安装与更新
+[→点我←](https://github.com/PMisRIGHT/Bilibili-Evolved/releases/download/v1.12.2-fix2/Bilibili.Evolved.Offline.Mod.user.js)，应该不会替换掉你原版的v1脚本，因为脚本名字不同
 
 # 使用
 额，相信你会来找这个版本就已经会使用了吧，可以导出v1的设置后导入到这个版本里，但是应该不能使用v2的设置
 
 # 修复说明
 原脚本不知道是为了节省空间还是提高加载效率，将脚本内容放到了一行里，很难做修改，我使用了Notepad++的JSTool插件将原脚本格式化后做修复，下面修复内容里的行数就是这么来的
+
+--
+#### 2023.08.30
+增加了识别版本号以使更新可用：
+为@ version行添加后缀，以使各种猴子识别到版本变化
+
+再次修复了夜间模式无法适配到所有元素的问题：
+再次将7357行与7379行offlineData中的style内容替换为[v2最新版夜间模式功能](https://github.com/the1812/Bilibili-Evolved/blob/master/registry/dist/components/style/dark-mode.js)中的style内容以修复夜间模式
 
 --
 #### 2022.11.22
